@@ -4,7 +4,7 @@ import HeaderSlider from "views/components/custom/HeaderSlider";
 import AllProducts from "views/components/home/AllProducts";
 
 const Home = () => {
-    const { products, setProducts } = useState<[] | any[]>([]);
+    const [products, setProducts] = useState<IProduct[]>([]);
 
     useEffect(() => {
         ProductService.getAllProducts().then((data) => {
@@ -14,7 +14,7 @@ const Home = () => {
 
     return (
         <main>
-            <div>
+            <div className="py-20">
                 <HeaderSlider />;
             </div>
             <div className="all_products">

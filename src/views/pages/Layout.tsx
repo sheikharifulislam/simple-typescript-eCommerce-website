@@ -8,9 +8,9 @@ export const Layout = () => {
             <header>
                 <Header />
             </header>
-            <body>
+            <main>
                 <Main />
-            </body>
+            </main>
             <footer>
                 <Footer />
             </footer>
